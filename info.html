@@ -1,3 +1,19 @@
+$(document).ready(function() {
+	$('a.more').click(function() {
+	
+		// Toggle Class
+		$tr = $(this).parent().parent();
+		$tr.toggleClass('expanded');
+		
+		// Tampilkan - sembunyikan baris
+		$i = $(this).children('i');
+		$i.removeClass('fa-chevron-down', 'fa-chevron-up');
+		var arrow = $tr.hasClass('expanded') ? 'fa-chevron-up' : 'fa-chevron-down';
+		$i.addClass(arrow);
+		
+		return false;
+	});
+})
 <thead>
 	<tr>
 		<th scope="col" class="column-primary" data-header="Info Loker"><span>Nama Perusahaan</span></th>
@@ -5,42 +21,49 @@
 		<th scope="col">Telp</th>
 		<th scope="col">Email</th>
 		<th scope="col">Posisi Yang Dibutuhkan</th>
+		<th scope="col">Jumlah</th>
+		
 	</tr>
 </thead>
 <tbody>
 	<tr>
-		<td data-header="Nama" class="title"></td>
-		<td data-header="Alamat" ></td>
-		<td data-header="Telp" ></td>
-		<td data-header="Email" >@gmail.com</td>
-    <td data-header="pos" ></td>
+		<td data-header="Nama" class="title">Vita Corps</td>
+		<td data-header="Alamat" >JL. Nangka</td>
+		<td data-header="Telp" >0897979999</td>
+		<td data-header="Email" >vita@gmail.com</td>
+    		<td data-header="pos" >Administrator</td>
+		<td data-header="jum">3 Orang</td>
 	</tr>\
   <tr>
-		<td data-header="Nama" class="title"></td>
-		<td data-header="Alamat" ></td>
-		<td data-header="Telp" ></td>
-		<td data-header="Email" >@gmail.com</td>
-    <td data-header="pos" ></td>
+		<td data-header="Nama" class="title">Iqbal Coprs</td>
+		<td data-header="Alamat" >Jl.Nanas</td>
+		<td data-header="Telp" >08868686</td>
+		<td data-header="Email" >iqbal@gmail.com</td>
+    		<td data-header="pos" >Staf Accounting</td>
+	  	<td data-header="jum">2 Orang</td>
 	</tr>
   <tr>
-		<td data-header="Nama" class="title"></td>
-		<td data-header="Alamat" ></td>
-		<td data-header="Telp" ></td>
-		<td data-header="Email" >@gmail.com</td>
-    <td data-header="pos" ></td>
+		<td data-header="Nama" class="title">Jumadil Corps</td>
+		<td data-header="Alamat" >JL.Rambutan</td>
+		<td data-header="Telp" >084545454</td>
+		<td data-header="Email" >jumadil@gmail.com</td>
+    		<td data-header="pos" >Staf HRD</td>
+	  	<td data-header="jum">1 Orang</td>
 	</tr>
   <tr>
-		<td data-header="Nama" class="title"></td>
-		<td data-header="Alamat" ></td>
-		<td data-header="Telp" ></td>
-		<td data-header="Email" >@gmail.com</td>
-    <td data-header="pos" ></td>
+		<td data-header="Nama" class="title">Inggrid Corps</td>
+		<td data-header="Alamat" >JL.Mangga</td>
+		<td data-header="Telp" >08727272727</td>
+		<td data-header="Email" >inggrid@gmail.com</td>
+    		<td data-header="pos" >Fronted Office</td>
+	  	<td data-header="jum">4 Orang</td>
 	</tr>
   <tr>
-		<td data-header="Nama" class="title"></td>
-		<td data-header="Alamat" ></td>
-		<td data-header="Telp" ></td>
-		<td data-header="Email" >@gmail.com</td>
-    <td data-header="pos" ></td>
+		<td data-header="Nama" class="title">Imam Corps</td>
+		<td data-header="Alamat" >Jl.Durian</td>
+		<td data-header="Telp" >0815151515</td>
+		<td data-header="Email" >imam@gmail.com</td>
+    		<td data-header="pos" >Cashier</td>
+	  	<td data-header="jum">7 Orang</td>
 	</tr>
 </tbody>
