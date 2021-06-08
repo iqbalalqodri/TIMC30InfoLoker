@@ -115,9 +115,6 @@ a {
   color:black;
 }
 
-
-
-
 header {
   opacity: 1;
   height: 65px;
@@ -505,7 +502,40 @@ footer .list-footer:hover{
   animation: text 3s 1;
 }
 
+table {
+		width: 100%;
+	}
+	thead th.column-primary {
+		width: 100%;
+	}
 
+	thead th:not(.column-primary) {
+		display:none;
+	}
+	
+	th[scope="row"] {
+		vertical-align: top;
+	}
+	
+	td {
+		display: block;
+		width: auto;
+		text-align: right;
+	}
+	thead th::before {
+		text-transform: uppercase;
+		font-weight: bold;
+		content: attr(data-header);
+	}
+	thead th:first-child span {
+		display: none;
+	}
+	td::before {
+		float: left;
+		text-transform: uppercase;
+		font-weight: bold;
+		content: attr(data-header);
+	}
 .Warna-warni-header {
     background: linear-gradient(45deg, #004D40, #3E2723 , #636e72, #16a085, #e67e22, #3E2723, #004D40);
     background-size: 500% 500%;
