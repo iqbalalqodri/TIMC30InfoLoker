@@ -1,7 +1,580 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+* {
+  box-sizing: border-box;
+  font-family: "Arial";
 }
 
-#h1{
-    color:cyan
+body {
+  margin: 0;
 }
+
+a {
+  text-decoration: none;
+}
+
+.clear {
+  clear: left;
+}
+
+.container {
+  text-transform: uppercase;
+  max-width: 1170px;
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.top-wrapper {
+  padding: 180px 0 190px 0;
+  background-image: url("../img/gambar-1.jpg");
+  background-color:rgba(255,255,255,0.8);
+  background-size: cover;
+  color: white;
+  text-align: center;
+}
+
+.top-wrapper h1 {
+  opacity: 0.9;
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+  animation: text 3s 1;
+}
+
+.top-wrapper p {
+  opacity:0.9;
+  font-size: 20px;
+  font-family: Poppins;
+  margin-bottom: 3px;
+  color:white;
+  animation: text 3s 1;
+  text-transform: lowercase;
+}
+
+@keyframes text{
+
+  0%{
+  opacity: 0.7;
+  color:black;
+  
+
+  }
+  30%{
+  letter-spacing: 5px;
+  
+
+  }
+
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-wrapper {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.signup {
+  background-color: #239b76;
+}
+
+
+
+.top-wrapper input[type=text] {
+  width: 120px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url("../img/cari.png");
+  background-position: 4px 6px; 
+  background-size:30px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border:none;
+  float:center;
+  opacity: 0.6;
+}
+
+.top-wrapper input[type=text]:focus {
+  width: 50%;
+  opacity: 0.5;
+  color:black;
+}
+
+
+
+
+header {
+  opacity: 1;
+  height: 65px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  fill: white;
+  position :fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.8s ease-in-out ;
+}
+header:hover {
+  background-color: white;
+  color: black;
+  fill:#3829C4;
+}
+
+.logo {
+  width: auto;
+  height: 100px;
+  margin-top: -17px;
+  fill: inherit;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-right {
+  float: right;
+  margin-right: -25px;
+}
+
+.header-right a {
+  line-height: 65px;
+  padding: 0 25px;
+  color: inherit;
+  display: block;
+  float: left;
+  font-size: 18px;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.header-right a:hover {
+  background-color: #3829C4;
+  opacity: 0.8;
+  color: white;
+}
+
+.menu-icon {
+  display: none;
+}
+
+/* footer 1  by insanul akbar*/
+.extra1 {
+  padding-top: 10px;
+  padding-bottom: 80px;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-image: url('../img/image.png');
+  background-size:contain;
+  background-position: center center;
+  text-align: center;
+}
+
+.contents {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.lesson{
+  display: block;
+  margin: 10px;
+  flex: 0 0 auto;
+  width: 33%;
+  color:black;
+  
+}
+
+.lesson img {
+  width: 70%;
+  transition: all 0.5s ease-in-out;
+}
+.lesson img:hover {
+  width: 90%;
+}
+
+/* Khusnul : atur font biar lebih rapi */
+.lesson p {
+   font-family:Poppins;
+   font-size:10px;
+  
+}
+
+.judul-icon {
+  position: relative;
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.judul-icon p {
+  position: absolute;
+  top: 44%;
+  width: 100%;
+  color: white;
+}
+
+.judul h2 {
+  margin: 20px 0 10px;
+  font-weight: bold;
+  font-size:30px;
+  color: #3829C4;
+}
+
+.line {
+  height: 5px;
+  width: 150px;
+  border: none;
+  border-radius: 3px;
+  background-color: #777;
+  margin: 0 auto 30px;
+}
+.contents h1 {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 18px;
+  color:black;
+}
+
+.contents h1 span {
+  color: #3829C4;
+  font-size: 16px;
+}
+
+.contents p {
+	color:black;
+}
+
+.txt {
+  width: 80%;
+  display: inline-block;
+  margin-top: 15px;
+  font-size: 15px;
+  color: #b3aeb5;
+}
+/* Extra 1  by insanul akbar*/
+
+
+/* Extra 2  by */
+.call_to_action{
+  width: 100%;
+  height: 460px;
+  background-color: #f7f7f7;
+  overflow: hidden;
+  
+}
+
+.call_to_action img{
+  width: 478px;
+  margin-top: 73px;
+  margin-left: -99px;
+  float: left;
+}
+
+.call_to_action .cta_desc{
+  width: 480px;
+  float: left;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.call_to_action h2{
+  font-family: arial;
+  font-weight: bold;
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  margin-bottom: 30px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.call_to_action ul{
+  font-family:Poppins;
+  font-size: 16px;
+  letter-spacing: .5px;
+  line-height: 25px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.call_to_action a.cta_btn{
+  padding: 15px 40px;
+  display: inline-block;
+  color: #fff;
+  font-family: "LatoBold", arial;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+
+  border-radius: 2px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -o-border-radius: 2px;
+
+  background-color: rgba(56, 41, 196, 0.8);
+
+  box-shadow: 0 3px 0 rgba(43, 30, 167, 0.8);
+}
+
+.call_to_action a.cta_btn:hover{
+  background: rgba(56, 41, 196, 1);
+  box-shadow: 0 3px 0 rgba(43, 30, 167, 1);
+
+}
+/* Extra 2  by */
+
+
+/* Extra 3 begin --- by ilham_elhamdi*/
+.extra-3 {
+  width: 100%;
+  background-color: #f1f2f6;
+  font-family: inherit;
+}
+.extra-3 .container {
+  padding: 35px 10px;
+  margin: 0 auto;
+  width: 90%;
+  text-transform: none;
+}
+.extra-3-top {
+  display: flex;
+  flex-wrap: wrap;
+}
+.extra-3 .form-wrapper {
+  width: 67%;
+  padding-right: 20px;
+  flex: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.extra-3 h2 {
+  display: inline-block;
+  font-size: 30px;
+  color: #3829C4;
+  margin: 0;
+  width: 100%;
+}
+.extra-3 .name, .extra-3 .email {
+  width: 50%;
+  flex: auto;
+}
+.extra-3 .name {
+  padding-right: 10px;
+}
+.extra-3 .email {
+  padding-left: 10px;
+}
+.extra-3 .message {
+  flex: auto;
+  width: 100%;
+}
+.extra-3 p {
+  font-size: 14px;
+  color: black;
+} 
+.extra-3 span {
+  color: red;
+}
+.extra-3 .form-wrapper input, .extra-3 textarea {
+  width: 100%;
+  background-color: white;
+  font-size: 14px;
+  font-family: sans-serif;
+  padding: 15px;
+  border: 2px solid #F3F3F3;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 7px #F3F3F3;
+  margin-bottom: 14px;
+  opacity: 1;
+  z-index: -1;
+}
+.extra-3 textarea {
+  margin-bottom: 0;
+}
+.extra-3 .map-wrapper {
+  width: 33%;
+  flex: auto;
+  background-image: url("../img/map.jpg");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.extra-3 .btn {
+  display: block;
+  margin-top: 15px;
+  color: white;
+  background-color: #3829C4;
+  padding: 15px 40px;
+  width: 200px;
+  border: none;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.extra-3 .btn:hover {
+opacity: 0.9;
+}
+.extra-3 .btn:active {
+  opacity: 1;
+}
+/* Extra 3 end --- by ilham_elhamdi*/
+
+/* footer   by khusnul*/
+footer{
+  margin-top:0px;
+  padding: 30px;
+  width: 100%;
+  text-align: center;
+  background-color: #2f3542;
+  color: #fff;
+
+}
+
+footer input[type=text] {
+  width: 30%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../img/send.jpg');
+  background-position: 340px 6px; 
+  background-size:30px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
+  border:none;
+  float:center;
+}
+
+footer .list-footer{
+  float: center;
+  margin-top: 40px;
+}
+footer .list-footer a{
+  margin: 10px;
+  color: white;
+  opacity: 0.6;
+}
+footer .list-footer a:hover{
+  color: white;
+  opacity: 1;
+}
+
+footer .list-footer:hover{
+  float: center;
+  margin-top: 40px;
+  animation: text 3s 1;
+}
+
+
+.Warna-warni-header {
+    background: linear-gradient(45deg, #004D40, #3E2723 , #636e72, #16a085, #e67e22, #3E2723, #004D40);
+    background-size: 500% 500%;
+    -webkit-animation: ignielGradient 12s ease infinite;
+    -moz-animation: ignielGradient 12s ease infinite;
+    animation: ignielGradient 12s ease infinite;
+}
+@-webkit-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}.Warna-warni-extra2 {
+    background: linear-gradient(45deg, #b2bec3, #f89406, #26a65b, #5868ec, #f54e80, #f7ca18, #b2bec3);
+    background-size: 500% 500%;
+    -webkit-animation: ignielGradient 12s ease infinite;
+    -moz-animation: ignielGradient 12s ease infinite;
+    animation: ignielGradient 12s ease infinite;
+}
+@-webkit-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+.Warna-warni-footer {
+    background: linear-gradient(45deg, #f22613, #f89406, #26a65b, #5868ec, #f54e80, #f7ca18, #d2527f);
+    background-size: 500% 500%;
+    -webkit-animation: ignielGradient 12s ease infinite;
+    -moz-animation: ignielGradient 12s ease infinite;
+    animation: ignielGradient 12s ease infinite;
+}
+@-webkit-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes ignielGradient {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+
+/* footer  by khusnul */
