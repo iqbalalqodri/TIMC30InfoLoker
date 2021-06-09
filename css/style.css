@@ -87,9 +87,6 @@ a {
 .signup {
   background-color: #239b76;
 }
-
-
-
 .top-wrapper input[type=text] {
   width: 120px;
   box-sizing: border-box;
@@ -269,6 +266,17 @@ header:hover {
 }
 /* Extra 1  by insanul akbar*/
 
+/* by : Leni Jumvitasari*/
+table th{color:#1e1e1e}
+table caption{color:#1e1e1e;font-size:17px;font-weight:700;text-transform:uppercase}
+table.data,main table{width:100%;background-color:#fff}
+table.number_list th:first-child{width:26px;text-align:center}
+table.data th,main table th{background-color:#007b37;color:#fff}
+table.data th[scope=col],main table th[scope=col]{border-bottom:grey 1px solid}
+table.data th[scope=row],main table th[scope=row]{border-right:grey 1px solid}
+table.data,table.data th,table.data td,main table,main table th,main table td{border-collapse:collapse;border:1px solid #ccc;vertical-align:top}
+table.data td,table.data th,main table td,main table th{padding:4px}
+table.data th,main table th{font-weight:700}table.data td,main table td{background-color:#fff!important}
 
 /* Extra 2  by */
 .call_to_action{
