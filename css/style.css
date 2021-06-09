@@ -273,7 +273,7 @@ table.data,main table{width:50%;background-color:#fff}
 table.number_list th:first-child{width:10px;text-align:right}
 table.data th,main table th{background-color:#007b37;color:#fff}
 table.data th[scope=col],main table th[scope=col]{border-bottom:grey 1px solid}
-table.data td[scope=row],main table td[scope=row]{border-right:grey 1px solid}
+table.data th[scope=row],main table th[scope=row]{border-right:grey 1px solid}
 table.data,table.data th,table.data td,main table,main table th,main table td{border-collapse:collapse;border:1px solid #ccc;vertical-align:top}
 table.data td,table.data th,main table td,main table th{padding:4px}
 table.data th,main table th{font-weight:200}table.data td,main table td{background-color:#fff!important}
