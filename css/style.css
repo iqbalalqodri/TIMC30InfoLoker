@@ -270,7 +270,7 @@ header:hover {
 table th{color:#1e1e1e}
 table caption{color:#1e1e1e;font-size:17px;font-weight:200;text-transform:uppercase}
 table.data,main table{width:75%;background-color:#fff}
-table.number_list th:first-child{width:16px;text-align:left}
+table.number_list th:first-child{width:16px;text-align:right}
 table.data th,main table th{background-color:#007b37;color:#fff}
 table.data th[scope=col],main table th[scope=col]{border-bottom:grey 1px solid}
 table.data th[scope=row],main table th[scope=row]{border-right:grey 1px solid}
